@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using WebApiRestCustomValidation.Validations;
 
 namespace WebApiRestCustomValidation.Models
 {
@@ -12,6 +13,7 @@ namespace WebApiRestCustomValidation.Models
         public string Name { get; set; }
 
         [Required]
+        [Unique]
         public string NickName { get; set; }
     }
 }
